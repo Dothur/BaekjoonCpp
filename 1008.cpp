@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// A/B < %.9lf > 
-
 int main() {
 	double A;
 	double B;
