@@ -1,14 +1,15 @@
 #include <iostream>
 using namespace std;
-int factorial(int n){
-    if(n > 2)
-    n *= factorial(n-1);
-    return n;
+// 팩토리얼 재귀함수
+
+int fac(int n){
+    if(n <= 1) return 1;
+    return n * fac(n-1);
 }
-int main(void){
-    int num, result = 1;
-    cin>>num;
-    if(num!=0)
-        result = factorial(num);
-    cout<<result;
+
+int main(){
+    int n;
+    cin >> n;
+    
+    cout << fac(n);
 }
